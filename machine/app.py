@@ -144,6 +144,7 @@ def check_runtime() -> tuple[bool, str]:
     try:
         import cv2  # noqa: F401
         import ultralytics  # noqa: F401
+        import lap  # noqa: F401
 
         return True, ""
     except ImportError as error:
